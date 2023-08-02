@@ -1,0 +1,49 @@
+.Chat-input {
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  width: clamp(50px, 45vw, 700px);
+  margin: 10px 11px;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+.Chat-input label {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.Chat-input input {
+  width: 95%;
+  border: none;
+  line-height: 60px;
+}
+
+.Chat-input img {
+  /* width: 25px; */
+  height: 25px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+  .Chat-input {
+    width: clamp(50px, 57vw, 600px);
+    /* width: 600px; */
+  }
+}
+@media only screen and (max-width: 780px) {
+  .Chat-input {
+    width: clamp(50px, 55%, 700px);
+  }
+}
+@media only screen and (max-width: 705px) {
+  .Chat-input {
+    width: clamp(50px, 50vw, 700px);
+  }
+}
+@media only screen and (max-width: 655px) {
+  .Chat-input {
+    width: clamp(50px, 38vw, 700px);
+  }
+}
